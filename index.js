@@ -1,7 +1,8 @@
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 // CONNECT DB
-const SuperCorp_db = require('./db')
+// const connection = require('./db/connection');
+// const SuperCorp_db = require('./db/')
 
 const menu = [
   {
@@ -36,7 +37,7 @@ const init = () => {
       addRole();
     } else if (decision.choice === `ADD an Employee`) {
       addEmployee();
-    } else if (deicision.choice === `Update Employee Roles`) {
+    } else if (decision.choice === `Update Employee Roles`) {
       updateRole();
     } else {
       console.log(`GOODBYE`);
@@ -44,8 +45,39 @@ const init = () => {
   });
 };
 
+// VIEWS
 const viewDepts = () => {
-  // DATABASE
+  // Dept Table
 }
+const viewRoles = () => {
+// Roles Table
+}
+const viewEmployees = () => {
+  // Employee Table
+}
+
+// ADDITIONS
+const nameDept = [
+  {
+    type: `input`,
+    name: `newDept`,
+    message: `New Department Name:`
+  }
+]
+const addDept = () => {
+  inquirer.prompt(nameDept)
+  .then((answer) => {
+    SuperCorp_db.insertDept(answer.newDept)
+    console.log(`Successfully created ${answer.newDept}!`)
+  })
+  .then(() => {
+    init();
+  });
+};
+
+// ADD ROLE
+// ADD EMPLOYEE
+
+// UPDATE EMPLOYEE ROLE
 
 init();
