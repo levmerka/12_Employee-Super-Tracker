@@ -1,8 +1,9 @@
 const inquirer = require('inquirer');
 const cTable = require('console.table');
+
 // CONNECT DB
-// const connection = require('./db/connection');
-// const SuperCorp_db = require('./db/')
+const connection = require('./db/connection');
+const SuperCorp_db = require('./db/class')
 
 const menu = [
   {
