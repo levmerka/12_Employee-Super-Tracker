@@ -42,7 +42,7 @@ const init = () => {
       updateRole();
     } else {
       console.log(`GOODBYE`);
-      process.exit()
+      process.exit();
     }
   });
 };
