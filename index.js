@@ -91,7 +91,43 @@ const addDept = () => {
 };
 
 // ADD ROLE
+const nameRole = [
+  {
+    type: `input`,
+    name: `newRole`,
+    message: `New Role Name:`,
+  },
+];
+const addRole = () => {
+  inquirer
+    .prompt(nameRole)
+    .then((answer) => {
+      SuperCorp_db.insertRole(answer.newRole);
+      console.log(`Successfully created ${answer.newRole}!`);
+    })
+    .then(() => {
+      init();
+    });
+};
 // ADD EMPLOYEE
+const nameEmployee = [
+  {
+    type: `input`,
+    name: `newEmployee`,
+    message: `New Employee Name:`,
+  },
+];
+const addEmployee = () => {
+  inquirer
+    .prompt(nameEmployee)
+    .then((answer) => {
+      SuperCorp_db.insertEmployee(answer.newEmployee);
+      console.log(`Successfully created ${answer.newEmployee}!`);
+    })
+    .then(() => {
+      init();
+    });
+};
 
 // UPDATE EMPLOYEE ROLE
 

@@ -14,7 +14,7 @@ viewEmployeeTable() {
   return this.connection.promise().query("SELECT * FROM EMPLOYEE")
 }
 insertDept(input) {
-  return this.connection.promise().query("INSERT INTO DEPARTMENT VALUES (?)", input)
+  return this.connection.promise().query("INSERT INTO DEPARTMENT name VALUES (?)", input)
 }
 }
 module.exports = new SuperCorp_db(connection);
