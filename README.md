@@ -2,6 +2,8 @@
 ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 UT Austin Full-Stack Flex Bootcamp Assignment 12
+### WALKTHROUGH: 
+https://drive.google.com/file/d/1EgQaAjsebTN-Qd6kLpi7mWkugYQ4wren/view
 
 ## Table of Contents:
 
