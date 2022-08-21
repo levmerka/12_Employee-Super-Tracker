@@ -3,7 +3,7 @@ const cTable = require("console.table");
 
 // CONNECT DB
 const connection = require("./db/connection");
-const SuperCorp_db = require("./db/class");
+const SuperCorp_db = require("./db/constructor");
 
 const menu = [
   {
@@ -42,6 +42,7 @@ const init = () => {
       updateRole();
     } else {
       console.log(`GOODBYE`);
+      process.exit()
     }
   });
 };
