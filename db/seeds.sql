@@ -13,9 +13,9 @@ VALUES (001, 'Manager', 999999, 001),
 
 INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES (001, 'Leslee', 'Fiveonetwo', 001, 001),
-       (002, 'Ignacious', 'Bismuth', 002), 
+       (002, 'Ignacious', 'Bismuth', 002, NULL), 
        (003, 'Heironymus', 'Rothschild', 003, 002),
-       (004, 'Johnny', 'Peppay', 004),
-       (005, 'William', 'Gates III', 004),
-       (006, 'Jeffrey', 'Besos', 004),
-       (007, 'Charleston', 'Schwabby', 004);
+       (004, 'Johnny', 'Peppay', 004, NULL),
+       (005, 'William', 'Gates III', 004, NULL),
+       (006, 'Jeffrey', 'Besos', 004, NULL),
+       (007, 'Charleston', 'Schwabby', 004, NULL);
